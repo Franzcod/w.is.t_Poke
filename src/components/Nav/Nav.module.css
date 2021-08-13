@@ -1,0 +1,38 @@
+.fullNav {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    background-color: #FF4848;
+    width: 100vw;
+}
+
+.divRey {
+
+    display: flex;
+    justify-content: center;
+    background-color: #FF4848;
+    width: 100vw;
+}
+
+.navCont {
+    width: 90vw;
+    background-color: #FF4848;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2px 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.linkNav {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    color: #fff;
+}
+
+.linkNav img {
+    height: 50px;
+    margin: auto 10px;
+    /* width: 50px; */
+}

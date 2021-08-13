@@ -1,0 +1,42 @@
+:root {
+    --heightNav: 72px;
+    --heightBackground: 100vh;
+}
+
+.divRey {
+    background-image: url('./../../assets/sky.png');
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+
+    /* justify-content: space-between; */
+    /* padding-top: 20px;
+    padding-left: 20px; */
+    /* padding-right: 20px; */
+    text-decoration: none;
+    color: black;
+}
+
+.contMayor {
+    width: 100vw;
+    height: 50vh;
+    background-color: rgba(250, 235, 215, 0.473);
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: row;
+}
+
+/* .cardQ {
+    width: 50%;
+    height: 100%;
+    background-color: aqua;
+} */
+
+
+@media (max-width: 700px) {
+    .contMayor {
+        flex-direction: column;
+    }
+}

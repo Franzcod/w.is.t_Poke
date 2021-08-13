@@ -1,0 +1,16 @@
+.divRey {
+    width: 50%;
+    height: 100%;
+    background-color: rgba(102, 255, 0, 0.24);
+}
+
+/* .img {
+    height: fit-content;
+
+} */
+
+@media (max-width: 700px) {
+    .divRey {
+        width: 100%;
+    }
+}
