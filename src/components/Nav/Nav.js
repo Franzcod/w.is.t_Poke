@@ -6,10 +6,10 @@ import poke_icon from "../../assets/poke_icon.png";
 
 export function Nav() {
   return (
-    <dviv className={styles.fullNav}>
+    <div className={styles.fullNav}>
       <div className={styles.divRey}>
         <div className={styles.navCont}>
-          <Link to="/" className={styles.linkNav}>
+          <Link to="/home" className={styles.linkNav}>
             <img src={poke_icon} alt="" className={styles.img} />
             <h2>W.is.T Poke</h2>
           </Link>
@@ -19,7 +19,7 @@ export function Nav() {
           </Link>
         </div>
       </div>
-    </dviv>
+    </div>
   );
 }
 
