@@ -14,15 +14,25 @@ function CardQ() {
   // let dificult = 4;
 
   function handleClick() {
+    // setClickState(true);
+    Swal.fire({
+      title: "Congrats!",
+      text: `Is ${championData[0]}`,
+      imageUrl: championData[1],
+      imageWidth: 400,
+      imageHeight: 200,
+      imageAlt: "Custom image",
+    });
     setClickState(true);
-    setTimeout(() => {
-      setClickState(false);
-    }, 1000);
+    // setTimeout(() => {
+    //   setClickState(false);
+    // }, 500);
   }
 
   var classNameImagen = click ? styles.imgPok_2 : styles.imgPok;
 
   useEffect(() => {
+    setClickState(false);
     setLoadinge(true);
 
     let grupo = obtenerOpciones(4);
@@ -40,7 +50,11 @@ function CardQ() {
 
           setChampion(elegido);
         })
-        .catch((err) => console.log("Error:", err));
+        .catch((err) => {
+          elegido.push(err.message);
+          elegido.push("https://i.gifer.com/DEUt.gif");
+          console.log("Error:", err);
+        });
     }
 
     let nroRandom = Math.floor(Math.random() * (1 + 3));
@@ -49,10 +63,10 @@ function CardQ() {
 
     getPokemons(nombre);
 
-    console.log("Elegido  ", elegido);
+    // console.log("Elegido  ", elegido);
     // setChampion(elegido);
     setLoadinge(false);
-  }, []);
+  }, [click]);
 
   return (
     <div className={styles.divRey}>
