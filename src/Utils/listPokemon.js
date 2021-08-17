@@ -196,7 +196,7 @@ let listPokemon = [
     species: "Mouse Pokemon",
   },
   {
-    name: "Nidoran F",
+    name: "Nidoran-f",
     type: "poison",
     stage: 1,
     caught: 0,
@@ -217,7 +217,7 @@ let listPokemon = [
     species: "Drill Pokemon",
   },
   {
-    name: "Nidoran M",
+    name: "Nidoran-m",
     type: "poison",
     stage: 1,
     caught: 0,
@@ -251,7 +251,7 @@ let listPokemon = [
     caught: 0,
     species: "fairy Pokemon",
   },
-  { name: "Vuplix", type: "fire", stage: 1, caught: 0, species: "Fox Pokemon" },
+  { name: "Vulpix", type: "fire", stage: 1, caught: 0, species: "Fox Pokemon" },
   {
     name: "Ninetales",
     type: "fire",
