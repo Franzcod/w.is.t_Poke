@@ -42,7 +42,7 @@ function CardQ() {
 
       let nroRandom = Math.floor(Math.random() * (1 + 3));
       console.log(grupo);
-      let nombre = grupo[nroRandom].toLowerCase();
+      let nombre = grupo[nroRandom][0].toLowerCase();
 
       await axios
         .get(`https://pokeapi.co/api/v2/pokemon/${nombre}`)
@@ -88,8 +88,8 @@ function CardQ() {
       <div className={styles.contBotons}>
         {pokemon.map((el) => {
           return (
-            <h2 key={el} className={styles.boton} onClick={handleClick}>
-              {el}
+            <h2 key={el[1]} className={styles.boton} onClick={handleClick}>
+              {el[0]}
             </h2>
           );
         })}

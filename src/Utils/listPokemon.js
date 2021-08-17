@@ -1055,8 +1055,9 @@ let listPokemon = [
 function obtenerOpciones(dificult) {
   let options = [];
   for (let i = 0; i < dificult; i++) {
-    let numeroRandom = Math.floor(Math.random() * (1 + 100 + 1) + 1);
-    options.push(listPokemon[numeroRandom].name);
+    let numeroRandom = Math.floor(Math.random() * (1 + 150));
+    // Le pongo el "i" para usar de KEy
+    options.push([listPokemon[numeroRandom].name, i]);
   }
   return options;
 }
