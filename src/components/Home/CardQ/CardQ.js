@@ -29,7 +29,7 @@ function CardQ() {
     // }, 500);
   }
 
-  var classNameImagen = click ? styles.imgPok_2 : styles.imgPok;
+  // var classNameImagen = click ? styles.imgPok_2 : styles.imgPok;
 
   useEffect(() => {
     setClickState(false);
