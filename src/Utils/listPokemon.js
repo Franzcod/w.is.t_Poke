@@ -568,7 +568,7 @@ let listPokemon = [
     species: "Magnet Pokemon",
   },
   {
-    name: "Farfetch'd",
+    name: "Farfetchd",
     type: "flying",
     stage: 3,
     caught: 0,

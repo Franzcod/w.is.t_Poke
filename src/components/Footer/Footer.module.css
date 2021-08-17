@@ -18,6 +18,13 @@
 }
 
 
+@media (max-width: 700px) {
+    .cont {
+        position: absolute;
+    }
+}
+
+
 /* 
 .cont p {
     margin-left: 80%;

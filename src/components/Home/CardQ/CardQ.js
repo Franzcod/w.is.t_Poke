@@ -14,7 +14,7 @@ function CardQ() {
   // let dificult = 4;
 
   function handleClick() {
-    // setClickState(true);
+    setClickState(true);
     Swal.fire({
       title: "Congrats!",
       text: `Is ${championData[0]}`,
@@ -23,9 +23,9 @@ function CardQ() {
       imageHeight: 200,
       imageAlt: "Custom image",
     });
-    setClickState(true);
+    // setClickState(true);
     // setTimeout(() => {
-    //   setClickState(false);
+    // setClickState(false);
     // }, 500);
   }
 
@@ -88,9 +88,9 @@ function CardQ() {
       <div className={styles.contBotons}>
         {pokemon.map((el) => {
           return (
-            <h2 key={el[1]} className={styles.boton} onClick={handleClick}>
+            <h3 key={el[1]} className={styles.boton} onClick={handleClick}>
               {el[0]}
-            </h2>
+            </h3>
           );
         })}
       </div>

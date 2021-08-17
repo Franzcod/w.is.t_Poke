@@ -1,7 +1,7 @@
 .divRey {
     margin-top: 30px;
     width: 100%;
-    height: 100%;
+    height: 90%;
     /* background-color: rgba(0, 255, 255, 0.404); */
     display: flex;
     flex-direction: row;
@@ -62,9 +62,9 @@
 .boton {
     background-color: #FF4848;
     border-radius: 32px;
-    margin: 5px 5px 25px 5px;
+    margin: 15px 5px 5px 5px;
     text-decoration: none;
-    padding: 2px 25px;
+    /* padding: 2px 25px; */
     color: aliceblue;
 }
 
@@ -72,12 +72,12 @@
 @media (max-width: 700px) {
     .divRey {
         width: 100%;
-        height: 90%;
+        height: 80%;
         flex-direction: column;
     }
 
     .contBotons {
-        width: 90%;
+        width: 80%;
     }
 
     .contImg {
