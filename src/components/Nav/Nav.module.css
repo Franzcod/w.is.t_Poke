@@ -1,6 +1,7 @@
 .fullNav {
     position: fixed;
     display: flex;
+    height: fit-content;
     justify-content: center;
     background-color: #FF4848;
     width: 100vw;
@@ -12,16 +13,19 @@
     justify-content: center;
     background-color: #FF4848;
     width: 100vw;
+
 }
 
 .navCont {
     width: 90vw;
+    height: 8%;
     background-color: #FF4848;
     display: flex;
     justify-content: space-between;
     padding-left: 2px 20px;
     text-decoration: none;
     color: #fff;
+
 }
 
 .linkNav {
@@ -29,10 +33,15 @@
     flex-direction: row;
     text-decoration: none;
     color: #fff;
+    font-weight: 600;
+    font-size: calc(1em + 0.5vw);
 }
 
+
+
 .linkNav img {
-    height: 50px;
-    margin: auto 10px;
+    min-height: 40px;
+    height: 5vh;
+    margin: 10px 10px;
     /* width: 50px; */
 }

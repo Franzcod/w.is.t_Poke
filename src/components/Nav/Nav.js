@@ -11,11 +11,11 @@ export function Nav() {
         <div className={styles.navCont}>
           <Link to="/home" className={styles.linkNav}>
             <img src={poke_icon} alt="" className={styles.img} />
-            <h2>W.is.T Poke</h2>
+            <p>W.is.T Poke</p>
           </Link>
 
           <Link to="/about" className={styles.linkNav}>
-            <h2>About</h2>
+            <p>About</p>
           </Link>
         </div>
       </div>

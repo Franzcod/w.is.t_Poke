@@ -14,7 +14,7 @@ function CardQ() {
   // let dificult = 4;
 
   function handleClick() {
-    setClickState(true);
+    setClickState(!click);
     Swal.fire({
       title: "Congrats!",
       text: `Is ${championData[0]}`,
@@ -23,16 +23,12 @@ function CardQ() {
       imageHeight: 200,
       imageAlt: "Custom image",
     });
-    // setClickState(true);
-    // setTimeout(() => {
-    // setClickState(false);
-    // }, 500);
   }
 
   // var classNameImagen = click ? styles.imgPok_2 : styles.imgPok;
 
   useEffect(() => {
-    setClickState(false);
+    // setClickState(false);
     setLoadinge(true);
 
     async function getPokemons() {

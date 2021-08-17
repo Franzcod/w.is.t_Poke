@@ -841,7 +841,7 @@ let listPokemon = [
     species: "Mysterious Pokemon",
   },
   {
-    name: "Mr. Mime",
+    name: "Mr-Mime",
     type: "psychic",
     stage: 4,
     caught: 0,
@@ -897,7 +897,7 @@ let listPokemon = [
     species: "Fish Pokemon",
   },
   {
-    name: "Gyrados",
+    name: "Gyarados",
     type: "water",
     stage: 5,
     caught: 0,
