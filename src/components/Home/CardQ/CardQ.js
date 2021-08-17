@@ -35,12 +35,17 @@ function CardQ() {
     setClickState(false);
     setLoadinge(true);
 
-    let grupo = obtenerOpciones(4);
-    setPokemon(grupo);
-    let elegido = [];
-    async function getPokemons(pokemon) {
+    async function getPokemons() {
+      let grupo = obtenerOpciones(4);
+      setPokemon(grupo);
+      let elegido = [];
+
+      let nroRandom = Math.floor(Math.random() * (1 + 3));
+      console.log(grupo);
+      let nombre = grupo[nroRandom].toLowerCase();
+
       await axios
-        .get(`https://pokeapi.co/api/v2/pokemon/${pokemon}`)
+        .get(`https://pokeapi.co/api/v2/pokemon/${nombre}`)
         .then((result) => {
           elegido.push(
             result.data.name.charAt(0).toUpperCase() + result.data.name.slice(1)
@@ -57,11 +62,7 @@ function CardQ() {
         });
     }
 
-    let nroRandom = Math.floor(Math.random() * (1 + 3));
-    // console.log(grupo[0].toLowerCase());
-    let nombre = grupo[nroRandom].toLowerCase();
-
-    getPokemons(nombre);
+    getPokemons();
 
     // console.log("Elegido  ", elegido);
     // setChampion(elegido);
@@ -73,7 +74,7 @@ function CardQ() {
       <div className={styles.contImg}>
         {/*{loading !== true ? <h2>{championData[0]}</h2> : <h2>Cargando</h2>}*/}
         {loading !== true ? (
-          <img alt="" src={championData[1]} className={classNameImagen} />
+          <img alt="" src={championData[1]} className={styles.imgPok} />
         ) : (
           // <h2>Cargando</h2>
           <img
