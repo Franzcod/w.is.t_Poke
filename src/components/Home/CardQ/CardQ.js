@@ -13,8 +13,9 @@ function CardQ() {
 
   // let dificult = 4;
 
-  function handleClick() {
+  function handleClick(e) {
     setClickState(!click);
+    console.log(e.target);
     Swal.fire({
       title: "Congrats!",
       text: `Is ${championData[0]}`,
@@ -37,7 +38,7 @@ function CardQ() {
       let elegido = [];
 
       let nroRandom = Math.floor(Math.random() * (1 + 3));
-      console.log(grupo);
+      // console.log(grupo);
       let nombre = grupo[nroRandom][0].toLowerCase();
 
       await axios

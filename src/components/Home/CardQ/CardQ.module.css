@@ -62,10 +62,16 @@
 .boton {
     background-color: #FF4848;
     border-radius: 32px;
-    margin: 15px 5px 5px 5px;
+    margin: 15px auto 5px auto;
     text-decoration: none;
     /* padding: 2px 25px; */
     color: aliceblue;
+    width: 70%;
+}
+
+.boton:hover {
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 

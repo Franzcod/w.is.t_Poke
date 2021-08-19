@@ -659,7 +659,7 @@ let listPokemon = [
     species: "rock Snake Pokemon",
   },
   {
-    name: "Drozee",
+    name: "Drowzee",
     type: "psychic",
     stage: 1,
     caught: 0,
